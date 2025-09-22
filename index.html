@@ -141,7 +141,11 @@
 
   <footer>
     <p>Prepared by Section 302 — Group 2.</p>
-    <p>Last updated: <time id="last-updated" datetime="">[replace with date]</time></p>
+    <p>Last updated: <time id="last-updated"></time></p>
+    <script>
+      // Display the last modified date of the HTML file
+      document.getElementById('last-updated').textContent = document.lastModified;
+    </script>
   </footer>
 </body>
 </html>
