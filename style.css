@@ -87,3 +87,16 @@ footer {
     margin-top: 2rem;
     border-top: 1px solid #cfd8e3;
 }
+
+img {
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: #222 0px 2px 8px;
+}
+
+#members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
