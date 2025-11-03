@@ -4,245 +4,321 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js" defer></script>
+  <script src="script.js" defer></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Oxanium:wght@200..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+  </style>
   <title>Section 302 — Group 2 — TestuKnow</title>
 </head>
-<body>
+<body class="titillium-web-regular">
   <header>
-    <h1>Section 302 — Group 2</h1>
-    <p><strong>Team:</strong> Group 2</p>
-    <p><strong>Project Name:</strong> <span id="project-name">TestuKnow</span></p>
+    <h2 class="bold-header">SECTION 302 — GROUP 2</h2>
+    <h1 class="title-header gradient-text">TESTUKNOW</h1>
   </header>
 
-  <main>
-    <!-- Project overview -->
-    <section id="overview" aria-labelledby="overview-heading">
-      <h2 id="overview-heading">Introduction</h2>
-      <p id="introduction">
-        <!-- Replace this paragraph with your team’s introduction about the project topic -->
+  <div id="navbar" class="roboto-text">
+    <button data-tab-target="panel1" class="tab" id="home-btn">Home</button>
+    <button data-tab-target="panel2" class="tab" id="about-btn">About Us</button>
+    <button data-tab-target="panel3" class="tab" id="research-btn" >Research and Findings</button>
+    <button data-tab-target="panel4" class="tab" id="next-btn">What's Next?</button>
+  </div>
+
+  <div id="content-container">
+    <div id="panel1" data-tab-content>
+      <section id="overview" aria-labelledby="overview-heading">
+        <h2 id="overview-heading">Introduction</h2>
+        <p id="introduction">
         Our project will focus on creating an app that will serve as a hub for events and activities available to UMD students. The app will update students on all campus events, including sports games, pop-up shops, crimes that occur on or near campus, rallies, student club meetings, and much more. While all this information is currently available to students, it is scattered across several platforms making it difficult to keep track of everything. Our app would provide all that information in one place, making it very easy for students to be informed about events on campus. We would also allow students and other users of the apps to provide updates to ensure that all events are accounted for and to create a source of information driven by the UMD community. Overall, our goal is to provide a source of easy information to enhance student engagement and participation in campus events and to improve campus safety by giving a central hub for all important events and updates. 
-
-        <!-- Example research question provided; replace as needed -->
-        <em id="research-text"></em>
-      </p>
-    </section>
-
-    <!-- Problem statement -->
-    <section id="problem-statement" aria-labelledby="ps-heading">
-      <h2 id="ps-heading">Problem Statement</h2>
-      <article>
-        <h3>Problem</h3>
-        <p id="problem">
-          <!-- Describe the problem your project addresses -->
-          The University of Maryland's student population struggles with identifying events on campus in a timely manner. Being that a lot of these events are pop-up, it is difficult for students who want to remain active in their community to stay up to date. For this, we’ve conceptualized an app similar to YikYak in which students could post in a forum of currently occurring events. We acknowledge that YikYak does divide into subsections such as school and there is overlap within that and TestuKnow, however UMD’s YikYak is also cluttered with random posts from students and a centralized platform like this would be beneficial to the student population.
         </p>
-
-        <h3>Goal</h3>
-        <ol>
-          <li>Create a website that UMD students can use to find information and social events</li>
-          <li>Make the website easily accessible</li>
-          <li>Allow students to update the website so that any and all campus events are included</li>
-          </ol>
-        </ol>
-      </article>
-    </section>
-
-    <section id="interview-guide" aria-labelledby="ig-heading">
-      <h2 id="ig-heading">Interview Guide</h2>
-      <article>
-        <h3>Introduction</h3>
-        <p>
-          The team conducted user interviews to gather information about how UMD students discover and attend events. These interviews were framed as part of a user-centered design class project. Participants were informed that their responses would remain confidential and only be used for class purposes. With permission, the team took notes and, where possible, recorded responses.
-        </p>
-
-        <h3>Warm-Up</h3>
-        <ul>
-          <li>How are you doing today?</li>
-          <li>Could you tell us more about yourself (major, year, graduation plans)?</li>
-          <li>What are your plans after graduation?</li>
-        </ul>
-
-        <h3>General Questions</h3>
-        <ul>
-          <li>How often do you attend on-campus events? How do you find out about them?</li>
-          <li>Which social media platforms do you use most? What do they do well, and what don’t they?</li>
-          <li>Have you used Terplink? What are your thoughts on it?</li>
-        </ul>
-
-        <h3>Deeper Questions</h3>
-        <ul>
-          <li>Have you ever found an event on Terplink that interested you?</li>
-          <li>What would you change about Terplink?</li>
-        </ul>
-
-        <h3>Wrap-Up</h3>
-        <ul>
-          <li>Do you have any additional thoughts about campus events or tools?</li>
-          <li>Is there anything we didn’t ask that you think we should know?</li>
-        </ul>
-      </article>
-    </section>
-
-    <section id="observational-guide" aria-labelledby="og-heading">
-      <h2 id="og-heading">Observational Guide</h2>
-      <article>
-        <h3>Contextual Inquiry</h3>
-        <p>
-          To supplement the interviews, the team developed an observational guide using the AEIOU framework (Activities, Environments, Interactions, Objects, Users). This approach allowed us to understand how students interact with event-finding tools in real contexts.
-        </p>
-
-        <h3>Activities</h3>
-        <ul>
-          <li>How easy is it for the user to navigate the page (1–10)?</li>
-          <li>What questions are they asking? What tasks are they trying to complete without guidance?</li>
-        </ul>
-
-        <h3>Environments</h3>
-        <ul>
-          <li>Where are students accessing the page from?</li>
-          <li>At what time of day are they using the platform?</li>
-        </ul>
-
-        <h3>Interactions</h3>
-        <ul>
-          <li>Do students collaborate while viewing the page together?</li>
-          <li>Are interactions respectful and helpful?</li>
-        </ul>
-
-        <h3>Objects</h3>
-        <ul>
-          <li>Are students recording events or tracking them?</li>
-          <li>Do they want information to transfer to other apps or websites?</li>
-        </ul>
-
-        <h3>Users</h3>
-        <ul>
-          <li>Students</li>
-          <li>Faculty</li>
-          <li>UMD Alumni</li>
-          <li>College Park Police</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Team members -->
-    <section id="team" aria-labelledby="team-heading">
-      <h2 id="team-heading">Team Members</h2>
-      <p><strong>Section:</strong> 302 — <strong>Group #</strong> 2</p>
-
-      <!-- Use <figure> + <figcaption> for each member; replace src with real image paths or avatars -->
-      <ul id="members" style="list-style: none; padding: 0; margin: 0;">
-        <li>
-          <figure>
-            <!-- Replace the placeholder image with a real photo or avatar URL -->
-            <img src="vyimg.jpg" alt="Photo of Member 1" width="120" height="120" />
-            <figcaption>
-              <strong>Name:</strong> Valerie Yen <em>(she/her/they/them)</em><br />
-              <em>Web Developer and Designer</em>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li>
-          <figure>
-            <img src="ahimg.jpg" alt="Photo of Member 2" width="120" height="120" />
-            <figcaption>
-              <strong>Name:</strong> Aditya Hardikar <em>(he/him)</em><br />
-              <em>Lead Contributor</em>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li>
-          <figure>
-            <img src="zcimg.jpg" alt="Photo of Member 3" width="120" height="120" />
-            <figcaption>
-              <strong>Name:</strong> Zola Chanyalew <em>(she/her)</em><br />
-              <em>Product Review</em>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li>
-          <figure>
-            <img src="apimg.jpg" alt="Photo of Member 3" width="120" height="120" />
-            <figcaption>
-              <strong>Name:</strong> Aditya Patel <em>(he/him)</em><br />
-              <em>Web Developer</em>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li>
-          <figure>
-            <img src="scimg.jpg" alt="Photo of Member 3" width="120" height="120" />
-            <figcaption>
-              <strong>Name:</strong> Sean Case <em>(he/him)</em><br />
-              <em>Concept Designer</em>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-
-      <!-- Optional contact or responsibilities table (unstyled) -->
-      <section aria-labelledby="roles-heading">
-        <h3 id="roles-heading">Team Roles & Contacts</h3>
-        <table border="1" cellpadding="6" cellspacing="0">
-          <thead>
-            <tr>
-              <th>Team Member</th>
-              <th>Contact</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Valerie</td>
-              <td>vyen4578@terpmail.umd.edu</td>
-            </tr>
-            <tr>
-              <td>Adi</td>
-              <td>ahardika@terpmail.umd.edu</td>
-            </tr>
-            <tr>
-              <td>Zola</td>
-              <td>zchanya1@gterpmail.umd.edu</td>
-            </tr>
-            <tr>
-              <td>Aditya</td>
-              <td>apate100@gterpmail.umd.edu</td>
-            </tr>
-            <tr>
-              <td>Sean</td>
-              <td>seancase@gterpmail.umd.edu</td>
-            </tr>
-          </tbody>
-        </table>
       </section>
-    </section>
 
-    <!-- Project timeline / deliverables (simple placeholder) -->
-    <section id="timeline" aria-labelledby="timeline-heading">
-      <h2 id="timeline-heading">Timeline & Deliverables</h2>
-      <ol>
-        <li>Week 1 — Project kickoff, define scope</li>
-        <li>Week 2 — Research & data collection</li>
-        <li>Week 3 — Wireframes / prototypes</li>
-        <li>Week 4 — Usability testing & iteration</li>
-        <li>Week 5 — Final report & presentation</li>
-      </ol>
-    </section>
+      <section id="problem-statement" aria-labelledby="ps-heading">
+        <h2 id="ps-heading">Problem Statement</h2>
+        <article>
+          <h3>Problem</h3>
+          <p id="problem">
+            The University of Maryland's student population struggles with identifying events on campus in a timely manner. Being that a lot of these events are pop-up, it is difficult for students who want to remain active in their community to stay up to date. For this, we’ve conceptualized an app similar to YikYak in which students could post in a forum of currently occurring events. We acknowledge that YikYak does divide into subsections such as school and there is overlap within that and TestuKnow, however UMD’s YikYak is also cluttered with random posts from students and a centralized platform like this would be beneficial to the student population.
+          </p>
 
-    <!-- Resources / references
-    <section id="resources" aria-labelledby="resources-heading">
-      <h2 id="resources-heading">Resources & References</h2>
-      <ul>
-        <li>[Reference 1 — replace with actual citation or link]</li>
-        <li>[Reference 2 — replace with actual citation or link]</li>
-      </ul>
-    </section> -->
-  </main>
+          <h3>Goal</h3>
+          <ol>
+            <li>Create a website that UMD students can use to find information and social events</li>
+            <li>Make the website easily accessible</li>
+            <li>Allow students to update the website so that any and all campus events are included</li>
+            </ol>
+          </ol>
+        </article>
+      </section>
+
+      <section id="timeline" aria-labelledby="timeline-heading">
+        <h2 id="timeline-heading">Timeline & Deliverables</h2>
+        <ol>
+          <li>Week 1 — Project kickoff, define scope</li>
+          <li>Week 2 — Research & data collection</li>
+          <li>Week 3 — Wireframes / prototypes</li>
+          <li>Week 4 — Usability testing & iteration</li>
+          <li>Week 5 — Final report & presentation</li>
+        </ol>
+      </section>
+    </div>
+
+    <div id="panel2" data-tab-content>
+      <section id="team" aria-labelledby="team-heading">
+        <h2 id="team-heading">Team Members</h2>
+        <p><strong>Section:</strong> 302 — <strong>Group #</strong> 2</p>
+
+        <ul id="members" style="list-style: none; padding: 0; margin: 0;">
+          <li>
+            <figure>
+              <img src="./images/headshots/vyimg.jpg" alt="Photo of Member 1" width="120" height="120" />
+              <figcaption>
+                <strong>Name:</strong> Valerie Yen <em>(she/her/they/them)</em><br />
+                <em>Web Developer and Designer</em>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img src="./images/headshots/ahimg.jpg" alt="Photo of Member 2" width="120" height="120" />
+              <figcaption>
+                <strong>Name:</strong> Aditya Hardikar <em>(he/him)</em><br />
+                <em>Lead Contributor</em>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img src="./images/headshots/zcimg.jpg" alt="Photo of Member 3" width="120" height="120" />
+              <figcaption>
+                <strong>Name:</strong> Zola Chanyalew <em>(she/her)</em><br />
+                <em>Product Review</em>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img src="./images/headshots/apimg.jpg" alt="Photo of Member 3" width="120" height="120" />
+              <figcaption>
+                <strong>Name:</strong> Aditya Patel <em>(he/him)</em><br />
+                <em>Web Developer</em>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img src="./images/headshots/scimg.jpg" alt="Photo of Member 3" width="120" height="120" />
+              <figcaption>
+                <strong>Name:</strong> Sean Case <em>(he/him)</em><br />
+                <em>Concept Designer</em>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+
+        <section aria-labelledby="roles-heading">
+          <h3 id="roles-heading">Team Roles & Contacts</h3>
+          <table border="1" cellpadding="6" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Team Member</th>
+                <th>Contact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Valerie</td>
+                <td>vyen4578@terpmail.umd.edu</td>
+              </tr>
+              <tr>
+                <td>Adi</td>
+                <td>ahardika@terpmail.umd.edu</td>
+              </tr>
+              <tr>
+                <td>Zola</td>
+                <td>zchanya1@gterpmail.umd.edu</td>
+              </tr>
+              <tr>
+                <td>Aditya</td>
+                <td>apate100@gterpmail.umd.edu</td>
+              </tr>
+              <tr>
+                <td>Sean</td>
+                <td>seancase@gterpmail.umd.edu</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </div>
+
+    <div id="panel3" data-tab-content>
+      <section id="interview-guide" aria-labelledby="ig-heading">
+        <h2 id="ig-heading">Interview Guide</h2>
+        <article>
+          <h3>Introduction</h3>
+          <p>
+            The team conducted user interviews to gather information about how UMD students discover and attend events. These interviews were framed as part of a user-centered design class project. Participants were informed that their responses would remain confidential and only be used for class purposes. With permission, the team took notes and, where possible, recorded responses.
+          </p>
+
+          <table border="1" cellpadding="6" cellspacing="0" summary="Interview guide organized by section and questions">
+            <thead>
+              <tr>
+                <th scope="col">Section</th>
+                <th scope="col">Questions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Warm-Up</th>
+                <td>
+                  <ul>
+                    <li>How are you doing today?</li>
+                    <li>Could you tell us more about yourself (major, year, graduation plans)?</li>
+                    <li>What are your plans after graduation?</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">General Questions</th>
+                <td>
+                  <ul>
+                    <li>How often do you attend on-campus events? How do you find out about them?</li>
+                    <li>Which social media platforms do you use most? What do they do well, and what don’t they?</li>
+                    <li>Have you used Terplink? What are your thoughts on it?</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Deeper Questions</th>
+                <td>
+                  <ul>
+                    <li>Have you ever found an event on Terplink that interested you?</li>
+                    <li>What would you change about Terplink?</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Wrap-Up</th>
+                <td>
+                  <ul>
+                    <li>Do you have any additional thoughts about campus events or tools?</li>
+                    <li>Is there anything we didn’t ask that you think we should know?</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <section id="observational-guide" aria-labelledby="og-heading">
+        <h2 id="og-heading">Observational Guide</h2>
+        <article>
+          <h3>Contextual Inquiry</h3>
+          <p>
+            To supplement the interviews, the team developed an observational guide using the AEIOU framework (Activities, Environments, Interactions, Objects, Users). This approach allowed us to understand how students interact with event-finding tools in real contexts.
+          </p>
+
+          <table border="1" cellpadding="6" cellspacing="0" summary="AEIOU observational guide">
+            <thead>
+              <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Notes / Questions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Activities</th>
+                <td>
+                  <ul>
+                    <li>How easy is it for the user to navigate the page (1–10)?</li>
+                    <li>What questions are they asking? What tasks are they trying to complete without guidance?</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Environments</th>
+                <td>
+                  <ul>
+                    <li>Where are students accessing the page from?</li>
+                    <li>At what time of day are they using the platform?</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Interactions</th>
+                <td>
+                  <ul>
+                    <li>Do students collaborate while viewing the page together?</li>
+                    <li>Are interactions respectful and helpful?</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Objects</th>
+                <td>
+                  <ul>
+                    <li>Are students recording events or tracking them?</li>
+                    <li>Do they want information to transfer to other apps or websites?</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">Users</th>
+                <td>
+                  <ul>
+                    <li>Students</li>
+                    <li>Faculty</li>
+                    <li>UMD Alumni</li>
+                    <li>College Park Police</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <section id="findings" aria-labelledby="findings-heading">
+        <h2 id="findings-heading">Findings — Busyness vs. Sentiment</h2>
+        <p>We examined participants' reported busyness (y) vs. sentiment for TerpLink and YikYak (x). Below are two small-multiple scatterplots with least-squares trend lines and R². Points are hoverable to reveal values.</p>
+
+        <div class="fv-wrap">
+          <div class="fv-grid">
+            <div class="fv-card" aria-hidden="false">
+              <div class="fv-title"><span class="fv-swatch fv-swatch-terp"></span> TerpLink sentiment vs. Busyness</div>
+              <svg id="fv-chart-terp" class="fv-svg" role="img" aria-label="Scatterplot: TerpLink sentiment vs busyness"></svg>
+              <div class="fv-note">Busyness and sentiment normalized to [0,1].</div>
+            </div>
+
+            <div class="fv-card" aria-hidden="false">
+              <div class="fv-title"><span class="fv-swatch fv-swatch-yak"></span> YikYak sentiment vs. Busyness</div>
+              <svg id="fv-chart-yak" class="fv-svg" role="img" aria-label="Scatterplot: YikYak sentiment vs busyness"></svg>
+              <div class="fv-note">Hover a point to see exact values.</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="fv-tooltip" class="fv-tooltip" role="status" aria-live="polite"></div>
+      </section>
+    </div>
+
+    <div id="panel4" data-tab-content>
+      Placeholder
+    </div>
+  </div>
 
   <footer>
-    <p>Prepared by Section 302 — Group 2.</p>
+    <p>Prepared by Section 302 — Group 2</p>
     <p>Last updated: <time id="last-updated"></time> by Valerie Yen</p>
     <script>
       // Display the last modified date of the HTML file
