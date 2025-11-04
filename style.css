@@ -245,6 +245,7 @@ img {
     border: 1px solid #e5e7eb;
     border-radius: .9rem;
     padding: .75rem;
+    box-shadow: #222 0px 2px 8px;
 }
 
 .fv-title {
@@ -341,4 +342,13 @@ img {
 #up-next-blurb {
     font-size: 1.5rem;
     text-align: center;
+}
+
+#miro-image {
+    max-width: 50rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+    border-radius: 1rem;
 }
