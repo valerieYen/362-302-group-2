@@ -17,19 +17,26 @@
     <h1 class="title-header gradient-text">TESTUKNOW</h1>
   </header>
 
+  <!-- Updated Navbar with all required rubric sections -->
   <div id="navbar" class="roboto-text">
     <button data-tab-target="panel1" class="tab" id="home-btn">Home</button>
     <button data-tab-target="panel2" class="tab" id="about-btn">About Us</button>
-    <button data-tab-target="panel3" class="tab" id="research-btn" >Research and Findings</button>
-    <button data-tab-target="panel4" class="tab" id="next-btn">What's Next?</button>
+    <button data-tab-target="panel3" class="tab" id="rq-goals-btn">Research Questions & Goals</button>
+    <button data-tab-target="panel4" class="tab" id="research-overview-btn">Research Overview</button>
+    <button data-tab-target="panel5" class="tab" id="ideation-personas-btn">Ideation &amp; Personas</button>
+    <button data-tab-target="panel6" class="tab" id="prototype-btn">Prototype</button>
+    <button data-tab-target="panel7" class="tab" id="usability-testing-btn">Usability Testing</button>
+    <button data-tab-target="panel8" class="tab" id="final-outcomes-btn">Final Outcomes</button>
   </div>
 
   <div id="content-container">
+    <!-- PANEL 1: HOME (Overview, Problem, Timeline) -->
     <div id="panel1" data-tab-content>
+      <img src="./images/mphoto.avif" class="header-img">
       <section id="overview" aria-labelledby="overview-heading">
         <h2 id="overview-heading">Introduction</h2>
         <p id="introduction">
-        Our project will focus on creating an app that will serve as a hub for events and activities available to UMD students. The app will update students on all campus events, including sports games, pop-up shops, crimes that occur on or near campus, rallies, student club meetings, and much more. While all this information is currently available to students, it is scattered across several platforms making it difficult to keep track of everything. Our app would provide all that information in one place, making it very easy for students to be informed about events on campus. We would also allow students and other users of the apps to provide updates to ensure that all events are accounted for and to create a source of information driven by the UMD community. Overall, our goal is to provide a source of easy information to enhance student engagement and participation in campus events and to improve campus safety by giving a central hub for all important events and updates. 
+          Our project focuses on creating an app that serves as a hub for events and activities available to UMD students. The app will update students on campus events, including sports games, pop-up shops, crimes that occur on or near campus, rallies, student club meetings, and more. While all this information is currently available to students, it is scattered across several platforms, making it difficult to keep track of everything. Our app will provide that information in one place, making it easier for students to stay informed about events on campus. We will also allow students and other users of the app to provide updates to ensure that all events are accounted for and to create a source of information driven by the UMD community. Overall, our goal is to provide an easy source of information that enhances student engagement and participation in campus events and improves campus safety by giving a central hub for all important events and updates.
         </p>
       </section>
 
@@ -38,93 +45,91 @@
         <article>
           <h3>Problem</h3>
           <p id="problem">
-            The University of Maryland's student population struggles with identifying events on campus in a timely manner. Being that a lot of these events are pop-up, it is difficult for students who want to remain active in their community to stay up to date. For this, we’ve conceptualized an app similar to YikYak in which students could post in a forum of currently occurring events. We acknowledge that YikYak does divide into subsections such as school and there is overlap within that and TestuKnow, however UMD’s YikYak is also cluttered with random posts from students and a centralized platform like this would be beneficial to the student population.
+            The University of Maryland's student population struggles to identify events on campus in a timely manner. Because many of these events are pop-up or advertised late, it is difficult for students who want to remain active in their community to stay up to date. For this, we have conceptualized an app similar to YikYak in which students can post in a forum of currently occurring events. While YikYak has school-based subsections that overlap with TestuKnow, UMD’s YikYak is cluttered with off-topic posts from students. A centralized, event-focused platform like TestuKnow would be more beneficial to the student population.
           </p>
 
-          <h3>Goal</h3>
+          <h3>High-Level Project Goals</h3>
           <ol>
-            <li>Create a website that UMD students can use to find information and social events</li>
-            <li>Make the website easily accessible</li>
-            <li>Allow students to update the website so that any and all campus events are included</li>
-            </ol>
+            <li>Create a website that UMD students can use to find information about social and campus events.</li>
+            <li>Make the website easily accessible and straightforward to navigate.</li>
+            <li>Allow students to update the website so that any and all campus events are included.</li>
           </ol>
         </article>
       </section>
 
       <section id="timeline" aria-labelledby="timeline-heading">
-        <h2 id="timeline-heading">Timeline & Deliverables</h2>
+        <h2 id="timeline-heading">Timeline &amp; Deliverables</h2>
         <ol>
-          <li>Week 1 — Project kickoff, define scope</li>
-          <li>Week 2 — Research & data collection</li>
-          <li>Week 3 — Wireframes / prototypes</li>
-          <li>Week 4 — Usability testing & iteration</li>
-          <li>Week 5 — Final report & presentation</li>
+          <li>Week 1 — Project kickoff, define scope.</li>
+          <li>Week 2 — Research &amp; data collection (interviews, observations, surveys).</li>
+          <li>Week 3 — Wireframes / mid-fidelity prototypes.</li>
+          <li>Week 4 — Usability testing &amp; iteration.</li>
+          <li>Week 5 — Final design refinements &amp; project website.</li>
         </ol>
       </section>
     </div>
 
+    <!-- PANEL 2: ABOUT US (Team Members) -->
     <div id="panel2" data-tab-content>
       <section id="team" aria-labelledby="team-heading">
-        <h1 id="team-heading">Team Members</h1>
-        <ul id="members" style="list-style: none; padding: 0; margin: 0;">
-          <li>
-            <figure>
-              <img src="./images/headshots/vyimg.jpg" alt="Photo of Member 1" width="120" height="120" />
-              <figcaption>
-                <strong>Name:</strong> Valerie Yen <em>(she/her/they/them)</em><br />
-                <em>Web Developer and Designer</em>
-                <p>Hi, my name is Valerie Yen! I'm a Senior Immersive Media Design major at the University of Maryland. I'm a Front-End Developer and Designer on TestuKnow, and have contributed to this website and assissted in faciliting data collection! I love music: listening, singing, instruments, you name it. I also game in my free time!</p>
-              </figcaption>
-            </figure>
-          </li>
+        <section id="team-carousel-section">
+          <h1>Team Members</h1>
 
-          <li>
-            <figure>
-              <img src="./images/headshots/ahimg.jpg" alt="Photo of Member 2" width="120" height="120" />
-              <figcaption>
-                <strong>Name:</strong> Aditya Hardikar <em>(he/him)</em><br />
-                <em>Lead Contributor</em>
-                <p>Hi, my name is Aditya Hardikar! I'm a senior at the University of Maryland studying Information Science. I'm a Lead Contributor on TestuKnow, and have assisted in data collection/surveying for this project. I also have assisted in conceptualizing design ideas from our collection results. In my free time, I like to work out, hang out with friends and listen to music.</p>
-              </figcaption>
-            </figure>
-          </li>
+          <div class="carousel-container">
 
-          <li>
-            <figure>
-              <img src="./images/headshots/zcimg.jpg" alt="Photo of Member 3" width="120" height="120" />
-              <figcaption>
-                <strong>Name:</strong> Zola Chanyalew <em>(she/her)</em><br />
-                <em>Product Review</em>
-                <p>Hi, I’m Zola, an Information Science major at the University of Maryland. I’m part of the TestuKnow team, where I contribute to both the research and design process. My work involves analyzing user feedback, helping translate insights into thoughtful design solutions, and ensuring our concepts are intuitive and user-centered. I’m passionate about combining creativity and technology to create meaningful digital experiences. In my free time, I enjoy listening to music, spending time with friends, and exploring new design ideas.</p>
-              </figcaption>
-            </figure>
-          </li>
+            <button class="carousel-btn prev-btn">&#10094;</button>
 
-          <li>
-            <figure>
-              <img src="./images/headshots/apimg.jpg" alt="Photo of Member 3" width="120" height="120" />
-              <figcaption>
-                <strong>Name:</strong> Aditya Patel <em>(he/him)</em><br />
-                <em>Web Developer</em>
-                <p>Hi, I’m Aditya Patel, a senior at the University of Maryland studying Information Science. I’m a Lead Developer at TestuKnow, where I work on building and improving our platform while also contributing to data collection, survey design, and turning research insights into thoughtful design concepts. I’m passionate about web development and enjoy combining creativity with technical problem-solving to create user-centered experiences.</p>
-              </figcaption>
-            </figure>
-          </li>
+            <div class="carousel-track-wrapper">
+              <div class="carousel-track">
 
-          <li>
-            <figure>
-              <img src="./images/headshots/scimg.jpg" alt="Photo of Member 3" width="120" height="120" />
-              <figcaption>
-                <strong>Name:</strong> Sean Case <em>(he/him)</em><br />
-                <em>Concept Designer</em>
-                <p>Hi, my name is Sean Case. I’m in my senior year at the University of Maryland, studying Information Science. I’m one of the lead contributors on TestuKnow, where I help with data analysis, reports, and the overall research process. I am able to work with quantitative and qualitative data to ensure we are designing our product based on our target users best interest. I also help translate data into written and visual deliverables for research reports. In my free time I enjoy playing basketball, spending time with friends, and reading.</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+                <div class="carousel-card">
+                  <img src="./images/headshots/vyimg.jpg" alt="Valerie Yen">
+                  <h3>Valerie Yen</h3>
+                  <p><em>Web Developer & Designer</em></p>
+                  <p class="bio">Valerie is a Senior IMD major...</p>
+                </div>
+
+                <div class="carousel-card">
+                  <img src="./images/headshots/ahimg.jpg" alt="Aditya Hardikar">
+                  <h3>Aditya Hardikar</h3>
+                  <p><em>Lead Contributor</em></p>
+                  <p class="bio">Aditya studies Information Science...</p>
+                </div>
+
+                <div class="carousel-card">
+                  <img src="./images/headshots/zcimg.jpg" alt="Zola Chanyalew">
+                  <h3>Zola Chanyalew</h3>
+                  <p><em>Product Review</em></p>
+                  <p class="bio">Zola contributes to research...</p>
+                </div>
+
+                <div class="carousel-card">
+                  <img src="./images/headshots/apimg.jpg" alt="Aditya Patel">
+                  <h3>Aditya Patel</h3>
+                  <p><em>Web Developer</em></p>
+                  <p class="bio">Aditya builds front–end components...</p>
+                </div>
+
+                <div class="carousel-card">
+                  <img src="./images/headshots/scimg.jpg" alt="Sean Case">
+                  <h3>Sean Case</h3>
+                  <p><em>Concept Designer</em></p>
+                  <p class="bio">Sean specializes in UX research...</p>
+                </div>
+
+              </div>
+            </div>
+
+            <button class="carousel-btn next-btn">&#10095;</button>
+
+            <div class="carousel-dots"></div>
+
+          </div>
+        </section>
+
 
         <section aria-labelledby="roles-heading">
-          <h3 id="roles-heading">Team Roles & Contacts</h3>
+          <h3 id="roles-heading">Team Roles &amp; Contacts</h3>
           <table border="1" cellpadding="6" cellspacing="0">
             <thead>
               <tr>
@@ -143,15 +148,15 @@
               </tr>
               <tr>
                 <td>Zola</td>
-                <td>zchanya1@gterpmail.umd.edu</td>
+                <td>zchanya1@terpmail.umd.edu</td>
               </tr>
               <tr>
                 <td>Aditya</td>
-                <td>apate100@gterpmail.umd.edu</td>
+                <td>apate100@terpmail.umd.edu</td>
               </tr>
               <tr>
                 <td>Sean</td>
-                <td>seancase@gterpmail.umd.edu</td>
+                <td>seancase@terpmail.umd.edu</td>
               </tr>
             </tbody>
           </table>
@@ -159,15 +164,33 @@
       </section>
     </div>
 
-    <div id="panel3" data-tab-content>
+    <!-- PANEL 3: RESEARCH OVERVIEW (methods + rationale, interviews, observations, early findings) -->
+    <div id="panel4" data-tab-content>
+      <img src="./images/lack-to-student-attendance.jpg" class="header-img header-bottom">
+      <section id="research-overview" aria-labelledby="research-overview-heading">
+        <h2 id="research-overview-heading">Research Overview</h2>
+        <p>
+          Our research combined multiple methods to understand how UMD students currently discover campus events, what barriers they face, and how a centralized event platform could better support them. We used:
+        </p>
+        <ul>
+          <li><strong>Semi-structured interviews</strong> to explore students’ event-finding habits, tools, and pain points.</li>
+          <li><strong>Contextual observations</strong> using an AEIOU framework to see how students interact with event-discovery tools in real settings.</li>
+          <li><strong>Survey-based sentiment scores</strong> to compare perceived busyness with attitudes toward existing platforms like TerpLink and YikYak, visualized with D3 scatterplots.</li>
+        </ul>
+        <p>
+          This mix of qualitative and quantitative methods allowed us to identify not only what tools students use, but why certain platforms feel cluttered, confusing, or unreliable. Together, these insights informed the core concept and feature set of TestuKnow.
+        </p>
+      </section>
+
       <section id="interview-guide" aria-labelledby="ig-heading">
-        <h2 id="ig-heading">Interview Guide</h2>
+        <h2 id="ig-heading">User Interviews</h2>
         <article>
-          <h3>Introduction</h3>
+          <h3>Interview Methodology</h3>
           <p>
-            The team conducted user interviews to gather information about how UMD students discover and attend events. These interviews were framed as part of a user-centered design class project. Participants were informed that their responses would remain confidential and only be used for class purposes. With permission, the team took notes and, where possible, recorded responses.
+            We conducted user interviews with UMD students as part of a user-centered design process. Participants were informed that the study was for a class project, that their responses would remain confidential, and that they could decline to answer any question. With permission, we took notes and, when possible, recorded responses to capture detailed quotes and behaviors.
           </p>
 
+          <h3>Interview Guide</h3>
           <table border="1" cellpadding="6" cellspacing="0" summary="Interview guide organized by section and questions">
             <thead>
               <tr>
@@ -192,7 +215,7 @@
                   <ul>
                     <li>How often do you attend on-campus events? How do you find out about them?</li>
                     <li>Which social media platforms do you use most? What do they do well, and what don’t they?</li>
-                    <li>Have you used Terplink? What are your thoughts on it?</li>
+                    <li>Have you used TerpLink? What are your thoughts on it?</li>
                   </ul>
                 </td>
               </tr>
@@ -200,8 +223,8 @@
                 <th scope="row">Deeper Questions</th>
                 <td>
                   <ul>
-                    <li>Have you ever found an event on Terplink that interested you?</li>
-                    <li>What would you change about Terplink?</li>
+                    <li>Have you ever found an event on TerpLink that interested you?</li>
+                    <li>What would you change about TerpLink?</li>
                   </ul>
                 </td>
               </tr>
@@ -220,11 +243,11 @@
       </section>
 
       <section id="observational-guide" aria-labelledby="og-heading">
-        <h2 id="og-heading">Observational Guide</h2>
+        <h2 id="og-heading">Contextual Observations (AEIOU)</h2>
         <article>
-          <h3>Contextual Inquiry</h3>
+          <h3>Observation Method</h3>
           <p>
-            To supplement the interviews, the team developed an observational guide using the AEIOU framework (Activities, Environments, Interactions, Objects, Users). This approach allowed us to understand how students interact with event-finding tools in real contexts.
+            To supplement interview data, we conducted contextual observations using the AEIOU framework (Activities, Environments, Interactions, Objects, Users). This helped us see how students actually discover and track events in the wild, beyond what they report in interviews.
           </p>
 
           <table border="1" cellpadding="6" cellspacing="0" summary="AEIOU observational guide">
@@ -291,35 +314,323 @@
         </article>
       </section>
 
-      <section id="findings" aria-labelledby="findings-heading">
-        <h2 id="findings-heading">Findings</h2>
-        <p>We examined participants' reported busyness (y) vs. sentiment for TerpLink and YikYak (x). Below are two small-multiple scatterplots with least-squares trend lines and R². Points are hoverable to reveal values.</p>
+      <section id="early-findings" aria-labelledby="findings-heading">
+        <h2 id="findings-heading">Early Findings: Sentiment &amp; Affinity Mapping</h2>
+        <p>
+          We examined participants' reported busyness versus their sentiment toward TerpLink and YikYak. Below are two small-multiple scatterplots, each with a least-squares trend line and R² value. Points are hoverable to reveal exact values.
+        </p>
 
         <div class="fv-wrap">
           <div class="fv-grid">
             <div class="fv-card" aria-hidden="false">
-              <div class="fv-title"><span class="fv-swatch fv-swatch-terp"></span> TerpLink sentiment vs. Busyness</div>
+              <div class="fv-title">
+                <span class="fv-swatch fv-swatch-terp"></span>
+                TerpLink Sentiment vs. Busyness
+              </div>
               <svg id="fv-chart-terp" class="fv-svg" role="img" aria-label="Scatterplot: TerpLink sentiment vs busyness"></svg>
               <div class="fv-note">Busyness and sentiment normalized to [0,1].</div>
             </div>
 
             <div class="fv-card" aria-hidden="false">
-              <div class="fv-title"><span class="fv-swatch fv-swatch-yak"></span> YikYak sentiment vs. Busyness</div>
+              <div class="fv-title">
+                <span class="fv-swatch fv-swatch-yak"></span>
+                YikYak Sentiment vs. Busyness
+              </div>
               <svg id="fv-chart-yak" class="fv-svg" role="img" aria-label="Scatterplot: YikYak sentiment vs busyness"></svg>
               <div class="fv-note">Hover a point to see exact values.</div>
             </div>
           </div>
         </div>
         <div id="fv-tooltip" class="fv-tooltip" role="status" aria-live="polite"></div>
+
         <p>
-          This affinity map organizes key insights gathered from five user interviews into thematic clusters. Each sticky note represents an individual comment or observation, grouped by shared concepts such as motivation to attend events, platform usability, awareness channels, and desired app features. The clustering process helped reveal consistent patterns, including that most students do not actively seek campus events, rely heavily on social media or peers for discovery, and find existing tools difficult to navigate or insufficiently targeted. Higher-level labels were created to summarize user needs, such as improved visibility of events, better personalization, and streamlined access to relevant campus activities.
+          The affinity map below organizes key insights from five user interviews into thematic clusters. Each sticky note represents an individual comment or observation, grouped by ideas such as motivation to attend events, platform usability, awareness channels, and desired app features. This helped us identify patterns like low intentional search for events, heavy reliance on social media and peers, and frustration with existing tools’ usability and targeting.
         </p>
-        <img id="miro-image" src="./images/miro.png" />
+        <img id="miro-image" src="./images/miro.png" alt="Affinity map summarizing interview findings for TestuKnow" />
       </section>
     </div>
 
-    <div id="panel4" data-tab-content>
-      <p id="up-next-blurb">After our survey phase, we plan to build a Proof of Concept of TestuKnow that addresses specific concerns users of YikYak and TerpLink. After designing our POC, we plan to reach out to people we surveyed and ask them if they would use this app, and if it meets the criteria they mentioned. After accounting for their feedback, we will plan to optimize TestuKnow and begin rolling it out to members of the University of Maryland community.</p>
+    <!-- PANEL 4: RESEARCH QUESTIONS & SMART GOALS -->
+    <div id="panel3" data-tab-content>
+      <section id="research-questions" aria-labelledby="rq-heading">
+        <h2 id="rq-heading">Research Questions (RQs)</h2>
+        <p>
+          Our project is guided by the following research questions:
+        </p>
+        <ol>
+          <li>
+            <strong>RQ1:</strong> Will pop-up and small campus events be more populated once TestuKnow is widely adopted and in regular use?
+          </li>
+          <li>
+            <strong>RQ2:</strong> How does student perceived involvement with the UMD community change before and after TestuKnow is promoted and used?
+          </li>
+          <li>
+            <strong>RQ3:</strong> How do students currently find out about events, and what issues or pain points do they experience with those channels?
+          </li>
+        </ol>
+      </section>
+
+      <section id="smart-goals" aria-labelledby="smart-heading">
+        <h2 id="smart-heading">Project Goals Using the SMART Framework</h2>
+        <p>
+          We use the SMART framework (Specific, Measurable, Achievable, Relevant, Time-bound) to define our primary goal for TestuKnow:
+        </p>
+        <p>
+          <strong>SMART Goal:</strong> By the end of the Spring 2025 semester, we will launch a TestuKnow web platform that allows UMD students to find and post information about campus events (including club meetings, games, pop-up events, and other activities). Within the first week after launch, at least 20 unique events will be posted by students or organizations.
+        </p>
+        <ul>
+          <li><strong>Specific:</strong> A web platform where UMD students can both discover and post campus events.</li>
+          <li><strong>Measurable:</strong> At least 20 unique events posted within the first week after launch.</li>
+          <li><strong>Achievable:</strong> Feasible given our team size, existing prototype, and available course timeline.</li>
+          <li><strong>Relevant:</strong> Directly supports our goal of improving event visibility, community engagement, and campus safety.</li>
+          <li><strong>Time-bound:</strong> Launch and measurement window tied to the end of Spring 2025 and the first week post-launch.</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- PANEL 5: IDEATION, 10+10, HYPOTHESES, PERSONAS (PLACEHOLDER CONTENT FOR YOU TO FILL) -->
+    <div id="panel5" data-tab-content>
+      <img src="./images/brainstorm.png" class="header-img header-bottom">
+      <section id="ideation" aria-labelledby="ideation-heading">
+        <h2 id="ideation-heading">10+10 Brainstorm Ideas</h2>
+        <p>
+          As part of our ideation process, we conducted structured brainstorming sessions to generate a wide range of possible solutions. We first produced at least ten initial ideas, then refined them into ten more detailed or combined concepts.
+        </p>
+        <p>
+          <em>[Placeholder for team content]</em><br />
+          Replace this paragraph with:
+        </p>
+        <ul>
+          <li>A bullet list of your first 10 raw ideas.</li>
+          <li>A second bullet list of your 10 refined concepts (10+10).</li>
+          <li>Any photos or screenshots of your sticky-note boards or Miro boards.</li>
+        </ul>
+      </section>
+
+      <section id="hypotheses" aria-labelledby="hypotheses-heading">
+        <h2 id="hypotheses-heading">Project Hypotheses</h2>
+        <p>
+          Based on our research questions and early findings, we will define testable hypotheses that connect specific design features to outcomes in event discovery and student engagement.
+        </p>
+        <p>
+          <em>[Placeholder for team content]</em><br />
+          Suggested structure:
+        </p>
+        <ul>
+          <li>
+            <strong>H1:</strong> [Example: Students who use TestuKnow at least once a week will report higher perceived awareness of campus events than those who do not.]
+          </li>
+          <li>
+            <strong>H2:</strong> [Example: Pop-up events shared through TestuKnow will have higher average attendance than similar events promoted only on existing platforms.]
+          </li>
+        </ul>
+      </section>
+
+      <section id="personas" aria-labelledby="personas-heading">
+        <h2 id="personas-heading">User Personas</h2>
+        <p>
+          To keep our design grounded in real user needs, we are developing personas that represent core segments of the UMD student body who might use TestuKnow.
+        </p>
+        <p>
+          <em>[Placeholder for team content]</em><br />
+          Fill in each persona with:
+        </p>
+        <ul>
+          <li>Basic demographics (year, major, involvement level).</li>
+          <li>Goals for campus involvement and event discovery.</li>
+          <li>Pain points with current tools (e.g., information overload, scattered platforms).</li>
+          <li>Typical tools used (Instagram, GroupMe, TerpLink, etc.).</li>
+        </ul>
+
+        <article>
+          <h3>Persona 1: [Name Placeholder]</h3>
+          <p><em>[Insert detailed profile here]</em></p>
+        </article>
+
+        <article>
+          <h3>Persona 2: [Name Placeholder]</h3>
+          <p><em>[Insert detailed profile here]</em></p>
+        </article>
+      </section>
+    </div>
+
+    <!-- PANEL 6: PROTOTYPE -->
+    <div id="panel6" data-tab-content>
+      <section id="prototype-section" aria-labelledby="prototype-heading">
+        <h2 id="prototype-heading">Prototype</h2>
+        <p>
+          Based on our research insights, we developed a clickable mid-fidelity prototype of TestuKnow. The prototype is organized around several key pages:
+        </p>
+        <ul>
+          <li><strong>Match Page:</strong> Shows recommended events tailored to user interests.</li>
+          <li><strong>Lineup Page:</strong> Lets users view their saved events in both list and calendar formats.</li>
+          <li><strong>Profile Page:</strong> Shows basic user information and preference settings that influence recommendations.</li>
+          <li><strong>Settings Page:</strong> Allows users to adjust notification and privacy options.</li>
+        </ul>
+        <p>
+          These pages work together to support a typical student journey: discovering events, deciding what to attend, and tracking an upcoming event schedule. The layout, navigation labels, and card-based event presentation are informed by our interviews and early sentiment analysis findings.
+        </p>
+
+        <figure>
+          <img src="./images/prototype-overview.png" alt="Screenshot of the TestuKnow mid-fidelity prototype (placeholder image)" style="max-width: 50rem; width: 100%; height: auto; border-radius: 1rem;" />
+          <figcaption>
+            <strong>Figure P.</strong> Overview of the TestuKnow mid-fidelity prototype. Replace this placeholder with your actual prototype screenshots or a link to your Figma/InVision file.
+          </figcaption>
+        </figure>
+      </section>
+    </div>
+
+    <!-- PANEL 7: USABILITY TESTING (PLAN + ANALYSIS & RESULTS) -->
+    <div id="panel7" data-tab-content>
+      <section id="usability-plan" aria-labelledby="usability-plan-heading">
+        <h2 id="usability-plan-heading">Usability Testing Plan</h2>
+        <p>
+          We designed a moderated, task-based usability test to evaluate the clarity, navigation, and overall usability of the TestuKnow prototype. Our objectives were to:
+        </p>
+        <ul>
+          <li>Assess how easily students can discover events using the Match page.</li>
+          <li>Evaluate whether students can successfully RSVP to events and manage their personal lineup.</li>
+          <li>Identify any confusion or friction when accessing the Profile and Settings pages.</li>
+          <li>Capture qualitative feedback on overall flow, information clarity, and feature relevance.</li>
+        </ul>
+
+        <h3>Participants</h3>
+        <p>
+          We tested the prototype with 15–18 UMD undergraduate students who reflect our target user base. Participants varied in:
+        </p>
+        <ul>
+          <li>Frequency of attending campus events (rarely to weekly).</li>
+          <li>Tools currently used to find events (Instagram, GroupMe, SEE pages, email newsletters, TerpLink).</li>
+          <li>Methods of schedule tracking (Google Calendar, Apple Calendar, Notes, Notion, or no formal system).</li>
+          <li>Overall campus involvement (from introverted students to highly engaged club members).</li>
+        </ul>
+
+        <h3>Core Tasks</h3>
+        <p>Each participant was asked to complete the following core tasks within the prototype:</p>
+        <ol>
+          <li>Navigate to the <strong>Match Page</strong> where recommended events appear.</li>
+          <li>RSVP to one event and deny another event from the match list.</li>
+          <li>Navigate to the <strong>Lineup Page</strong> and view both the list view and the calendar view.</li>
+          <li>Navigate to the <strong>Profile Page</strong> and review personal data and preferences.</li>
+          <li>Navigate to the <strong>Settings Page</strong> and explore notification and privacy options.</li>
+        </ol>
+
+        <h3>Methods and Metrics</h3>
+        <p>
+          We used a think-aloud protocol and moderated the sessions in small groups of two to three students. We captured:
+        </p>
+        <ul>
+          <li>Task success and click paths for each core task.</li>
+          <li>Perceived difficulty ratings (Likert scale 1–5) for each task.</li>
+          <li>Qualitative comments about what felt intuitive or confusing.</li>
+        </ul>
+        <p>
+          A scoring instrument was used to record ease-of-use ratings, navigation scores, and the number of clicks required. This allowed us to compare results across participants systematically.
+        </p>
+
+        <figure>
+          <img src="./images/usability-figure-a.jpg" alt="Figure A – Group of UMD students interacting with the TestuKnow prototype during a moderated usability session" style="max-width: 50rem; width: 100%; height: auto; border-radius: 1rem;" />
+          <figcaption><strong>Figure A.</strong> Usability testing session with UMD students (placeholder image).</figcaption>
+        </figure>
+      </section>
+
+      <section id="usability-results" aria-labelledby="usability-results-heading">
+        <h2 id="usability-results-heading">Usability Testing Analysis &amp; Results</h2>
+
+        <h3>Quantitative Findings</h3>
+        <p>
+          Participants rated seven key tasks on a 1–5 scale (1 = very difficult, 5 = very easy). Overall, all tasks scored above the midpoint, with average ratings around 3.7–4.5:
+        </p>
+        <ul>
+          <li>Core flows such as viewing the Match page, RSVPing, denying events, and accessing the Profile page were rated as some of the easiest tasks (around 4.5).</li>
+          <li>The Lineup and Calendar views received slightly lower ratings, in the high 3s, indicating that browsing and planning interactions felt less straightforward.</li>
+        </ul>
+        <p>
+          We also ran a non-parametric test (Friedman) to compare ratings across tasks. The differences were statistically significant, suggesting that some parts of the interface are consistently easier than others. Correlation analysis between task ratings showed that:
+        </p>
+        <ul>
+          <li>Tasks in the core “match and decision” flow were strongly positively correlated, implying a cohesive interaction pattern.</li>
+          <li>Lineup and Calendar tasks were moderately correlated with other flows, suggesting they felt somewhat distinct and are potential areas for improvement.</li>
+        </ul>
+
+        <figure>
+          <img src="./images/usability-figure-b.png" alt="Figure B – Bar chart of mean ease-of-use ratings across seven usability tasks" style="max-width: 50rem; width: 100%; height: auto; border-radius: 1rem;" />
+          <figcaption><strong>Figure B.</strong> Mean ease-of-use ratings by task (placeholder chart).</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/usability-figure-c.png" alt="Figure C – Heatmap of Spearman correlations between task ratings" style="max-width: 50rem; width: 100%; height: auto; border-radius: 1rem;" />
+          <figcaption><strong>Figure C.</strong> Correlation heatmap showing relationships between task ratings (placeholder chart).</figcaption>
+        </figure>
+
+        <h3>Qualitative Findings</h3>
+        <p>
+          In addition to numeric ratings, we collected rich qualitative feedback through pre-task questions, post-task debriefs, and think-aloud comments. Common themes included:
+        </p>
+        <ul>
+          <li>Many students rely heavily on Instagram and group chats for event discovery and will return to those tools if a new app feels slower or more confusing.</li>
+          <li>Participants appreciated the relevance of recommended events on the Match page but wanted more control over filtering (time of day, location, event type, food availability, etc.).</li>
+          <li>Multiple participants reported that the Calendar was “hard to find” or “didn’t stand out,” and that the Lineup page felt somewhat disconnected from the main flows.</li>
+          <li>Students emphasized the importance of quick, glanceable information. Several mentioned that if they could not find what they needed within a few seconds, they would likely leave.</li>
+        </ul>
+        <p>
+          We organized these insights into an affinity map to cluster recurring issues and opportunities.
+        </p>
+
+        <figure>
+          <img src="./images/usability-figure-d.png" alt="Figure D – Affinity map of usability findings from participant quotes" style="max-width: 50rem; width: 100%; height: auto; border-radius: 1rem;" />
+          <figcaption><strong>Figure D.</strong> Affinity map summarizing themes from usability testing (placeholder image).</figcaption>
+        </figure>
+      </section>
+
+      <section id="testing-roles" aria-labelledby="testing-roles-heading">
+        <h2 id="testing-roles-heading">Team Roles During Testing</h2>
+        <p>
+          Our entire team collaborated to run and analyze the usability testing sessions, with clearly defined roles:
+        </p>
+        <ul>
+          <li><strong>Facilitator (Valerie Yen):</strong> Led the testing script, guided participants through tasks, and maintained a consistent think-aloud protocol.</li>
+          <li><strong>Prototype Navigator &amp; Tech Support (Aditya Hardikar):</strong> Ensured the prototype loaded correctly, reset state between participants, and handled any technical issues.</li>
+          <li><strong>Primary Note-Taker (Zola Chanyalew):</strong> Recorded participant quotes, confusion points, task completion details, and Likert ratings.</li>
+          <li><strong>Secondary Note-Taker (Aditya Patel):</strong> Captured additional behavioral observations and helped ensure that no key comments were missed.</li>
+          <li><strong>Data Analysis &amp; Scoring (Sean Case):</strong> Compiled all test results, standardized language across entries, and identified recurring trends to inform the next iteration.</li>
+        </ul>
+        <p>
+          Having clear roles helped each session run smoothly, reduced overlap, and ensured that data collection and analysis were systematic and reliable.
+        </p>
+      </section>
+    </div>
+
+    <!-- PANEL 8: FINAL OUTCOMES, LEARNING EXPERIENCE, FUTURE DIRECTION -->
+    <div id="panel8" data-tab-content>
+      <section id="final-outcomes" aria-labelledby="final-outcomes-heading">
+        <h2 id="final-outcomes-heading">Final Outcomes &amp; Learning Experience</h2>
+        <p>
+          Through this project, we moved from a broad frustration—students missing out on campus events—to a concrete concept and tested prototype for TestuKnow. Our early research highlighted scattered information sources, overreliance on social media, and the difficulty of distinguishing genuine event information from noise. The prototype and usability testing gave us evidence that a more focused, event-first platform can feel intuitive and valuable to students.
+        </p>
+        <p>
+          Quantitatively, we learned that core flows such as viewing the Match page, RSVPing, and reviewing profile information already work well for most participants. Qualitatively, we saw that students appreciate speed, visual clarity, and minimal friction when evaluating events. We also discovered that certain pages (especially Calendar and Lineup) need stronger visual hierarchy, clearer signposting, and tighter integration with the Match flow.
+        </p>
+        <p>
+          As a team, we gained experience with the full UX research and design cycle: problem framing, mixed-method research, ideation, prototyping, and evidence-based iteration. We also learned how important it is to test early and often, especially when building tools that must integrate smoothly into students’ busy, multi-device routines.
+        </p>
+      </section>
+
+      <section id="future-direction" aria-labelledby="future-direction-heading">
+        <h2 id="future-direction-heading">Future Direction: What’s Next for TestuKnow?</h2>
+        <p id="up-next-blurb">
+          After our survey and initial usability testing phases, we plan to refine the Proof of Concept for TestuKnow to specifically address pain points identified with YikYak, TerpLink, and our own early design. In the near term, we will:
+        </p>
+        <ul>
+          <li>Redesign the Lineup and Calendar views to be easier to find and more visually consistent with the Match page.</li>
+          <li>Introduce more granular filters (time, location, event type, availability of food/free items) to better match students’ preferences.</li>
+          <li>Streamline navigation so core actions require fewer clicks and less cognitive effort.</li>
+          <li>Continue improving our recommendation logic so that suggested events feel increasingly relevant over time.</li>
+        </ul>
+        <p>
+          Once these changes are implemented, we plan to invite previous participants to test the updated version and compare results against our current findings. By iterating on both the interface and underlying logic, our long-term goal is to roll out TestuKnow to a broader segment of the UMD community and evaluate its impact on event awareness, attendance, and students’ sense of connection to campus life.
+        </p>
+      </section>
     </div>
   </div>
 
@@ -333,3 +644,4 @@
   </footer>
 </body>
 </html>
+

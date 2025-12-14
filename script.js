@@ -217,3 +217,70 @@
               makeChart(terpTarget, "terp", "fv-fit-terp", "#2563eb");
               makeChart(yakTarget,  "yak",  "fv-fit-yak",  "#f59e0b");
           })();
+
+// === TEAM CAROUSEL (final working version) ===
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector("#team-carousel-section");
+  if (!section) return;
+
+  const container = section.querySelector(".carousel-container");
+  const track = section.querySelector(".carousel-track");
+  const cards = Array.from(track.children);
+  const nextButton = section.querySelector(".next-btn");
+  const prevButton = section.querySelector(".prev-btn");
+  const dotsContainer = section.querySelector(".carousel-dots");
+
+  let index = 0;
+
+  // --- Create dots ---
+  dotsContainer.innerHTML = ""; // clear any duplicates
+  cards.forEach((_, i) => {
+    const dot = document.createElement("button");
+    dot.className = i === 0 ? "active" : "";
+    dot.dataset.index = i;
+    dotsContainer.appendChild(dot);
+  });
+
+  // IMPORTANT: Must re-select after creating dots
+  const dots = Array.from(dotsContainer.querySelectorAll("button"));
+
+  function getWidth() {
+    return cards[0].getBoundingClientRect().width;
+  }
+
+  function updateCarousel() {
+    const w = getWidth();
+    if (w > 0) {
+      track.style.transform = `translateX(-${index * w}px)`;
+    }
+
+    // --- Update dots ---
+    dots.forEach(d => d.classList.remove("active"));
+    dots[index].classList.add("active");
+  }
+
+  nextButton.addEventListener("click", () => {
+    index = (index + 1) % cards.length;
+    updateCarousel();
+  });
+
+  prevButton.addEventListener("click", () => {
+    index = (index - 1 + cards.length) % cards.length;
+    updateCarousel();
+  });
+
+  dots.forEach(dot => {
+    dot.addEventListener("click", () => {
+      index = parseInt(dot.dataset.index);
+      updateCarousel();
+    });
+  });
+
+  window.addEventListener("resize", updateCarousel);
+
+  updateCarousel();
+});
+
+
+
+
